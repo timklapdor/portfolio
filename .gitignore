@@ -2,8 +2,7 @@
 node_modules
 
 # build artefacts
-public
-css
+
 
 # secrets and errors
 .env
@@ -11,4 +10,3 @@ css
 
 # macOS related files
 .DS_Store
-

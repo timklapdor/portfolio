@@ -1,4 +1,114 @@
+$barlow: 'Barlow', sans-serif;
+
 body {
   font-family: sans-serif;
-  background-color: #f9f9f9;
+  background-color: #F3F3F3;
+  color: #344955;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  min-height: 100vh;
+}
+
+nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: currentColor;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  img {
+    max-height: 20vh;
+    max-width: 80%;
+    margin: 2vw;
+  }
+
+  ul {
+    text-align: center;
+    padding: 0 1vw;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: $barlow;
+    margin: 2vh auto;
+    font-size: 110%;
+
+    li {
+      padding: 1vh 0;
+    }
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+dl.business-cards {
+  display: grid;
+  grid-template-columns: 3ch 1fr 1fr;
+  grid-template-rows: 25vh;
+  grid-gap: 0 4ch;
+
+
+  dt {
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    // margin: -2em 0 -2em 0;
+  }
+  dd {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+
+    h4 {
+      font-family: $barlow;
+      font-weight: bold;
+      font-size: 150%;
+    }
+
+    p {
+      text-transform: uppercase;
+    }
+
+  & > * {
+    margin: 1ch 0;
+    }
+    }
+
+  img {
+    height: 25vh;
+    transition: 0.3s all;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+
+  dt {
+  &#first img {
+    transform: rotate(6deg);
+    z-index: 3;
+  }
+  &#second img {
+    transform: rotate(-4deg);
+    z-index: 2;
+  }
+  &#third img {
+    transform: rotate(-12deg);
+    z-index: 1;
+  }
+
+  & img:hover {
+    transform: scale(1.1) !important;
+  }
+  }
 }

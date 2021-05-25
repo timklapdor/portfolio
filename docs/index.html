@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title }}</title>
-	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+	<title>Hello World</title>
+	<link rel="stylesheet" href="/portfolio/css/style.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
 </head>
 <body>
 	<nav>
-		<img src="{{ '/assets/logo.svg' | url }}" alt="">
+		<img src="/portfolio/assets/logo.svg" alt="">
 		<ul>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Resume</a></li>
@@ -26,21 +26,21 @@
 
 	<main>
 		<!-- <header>
-			<h1>{{ title }}</h1>
+			<h1>Hello World</h1>
 		</header> -->
 
 		<dl class="business-cards">
-			<dt id="first"><img src="{{ "/assets/bc-adl.svg" | url }}" alt=""></dt>
+			<dt id="first"><img src="/portfolio/assets/bc-adl.svg" alt=""></dt>
 			<dd>
 				<h4>Manager, Online Learning  Design & Content</h4>
 				<p>University of Adelaide</p>
 			</dd>
-			<dt id="second"><img src="{{ "/assets/bc-26fifty.svg" | url }}" alt=""></dt>
+			<dt id="second"><img src="/portfolio/assets/bc-26fifty.svg" alt=""></dt>
 			<dd>
 				<h4>Co-founder</h4>
 				<p>26fifty</p>
 			</dd>
-			<dt id="third"><img src="{{ "/assets/bc-csu.svg" | url }}" alt=""></dt>
+			<dt id="third"><img src="/portfolio/assets/bc-csu.svg" alt=""></dt>
 			<dd>
 				<h4>Innovation Technology Officer</h4>
 				<p>Charles Sturt University</p>
@@ -48,7 +48,7 @@
 		</dl>
 
 
-	{{ content | safe }}
+	
 	</main>
 </body>
 </html>
